@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfabetização Digital</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Cabeçalho com Menu de Navegação -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#conceitos">Conceitos Básicos</a></li>
+                <li><a href="#quizzes">Quizzes</a></li>
+                <li><a href="#exemplos">Exemplos Práticos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Inicial -->
+    <section id="inicio">
+        <h1>Bem-vindo à Aplicação de Alfabetização Digital!</h1>
+        <p>Aqui você aprenderá conceitos básicos de tecnologia de forma simples e interativa.</p>
+    </section>
+
+    <!-- Seção de Conceitos Básicos -->
+    <section id="conceitos">
+        <h2>Conceitos Básicos</h2>
+        <p>Nesta seção, você aprenderá sobre:</p>
+        
+        <!-- Conceito: Navegador -->
+        <div class="conceito">
+            <h3><i class="fas fa-globe"></i> O que é um navegador?</h3>
+            <p>
+                Um navegador é um programa que permite acessar a internet e visualizar páginas da web.
+                Exemplos de navegadores populares são o <strong>Google Chrome</strong>, <strong>Mozilla Firefox</strong> e <strong>Microsoft Edge</strong>.
+            </p>
+            <img src="assets/images/navegador.jpg" alt="Imagem de um navegador" width="300">
+        </div>
+    
+        <!-- Conceito: Nuvem -->
+        <div class="conceito">
+            <h3><i class="fas fa-cloud"></i> O que é a nuvem?</h3>
+            <p>
+                A nuvem é um serviço de armazenamento online onde você pode guardar arquivos, fotos, vídeos e outros dados.
+                Exemplos de serviços de nuvem são o <strong>Google Drive</strong>, <strong>Dropbox</strong> e <strong>OneDrive</strong>.
+            </p>
+            <img src="assets/images/armazenamento-em-nuvem-2.jpg" alt="Imagem da nuvem" width="300">
+        </div>
+    
+        <!-- Conceito: Redes Sociais -->
+        <div class="conceito">
+            <h3><i class="fas fa-users"></i> O que são redes sociais?</h3>
+            <p>
+                Redes sociais são plataformas online onde as pessoas podem se conectar, compartilhar informações e interagir.
+                Exemplos de redes sociais são o <strong>Facebook</strong>, <strong>Instagram</strong> e <strong>Twitter</strong>.
+            </p>
+            <img src="assets/images/redes sociais.jpg" alt="Imagem de redes sociais" width="300">
+        </div>
+    </section>
+    </section>
+
+
+    <!--O que esse código faz?
+    Adiciona três conceitos básicos: navegador, nuvem e redes sociais.
+    Cada conceito tem:
+    Um título (<h3>).
+    Uma explicação simples (<p>).
+    Uma imagem ilustrativa (<img>).-->
+
+
+    <!-- Seção de Quizzes -->
+    <section id="quizzes">
+        <h2>Quizzes Interativos</h2>
+        <p>Teste seu conhecimento com nossos quizzes!</p>
+    
+        <!-- Quiz 1: Navegador -->
+        <div class="quiz">
+            <h3><i class="fas fa-question-circle"></i> Quiz: O que é um navegador?</h3>
+            <form id="quiz-navegador">
+                <p>1. Qual dos seguintes é um navegador?</p>
+                <label>
+                    <input type="radio" name="q1" value="a"> Google Chrome
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="b"> Microsoft Word
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="c"> Adobe Photoshop
+                </label><br>
+    
+                <p>2. Para que serve um navegador?</p>
+                <label>
+                    <input type="radio" name="q2" value="a"> Editar fotos
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="b"> Acessar a internet
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="c"> Escrever documentos
+                </label><br>
+    
+                <button type="button" onclick="verificarRespostas('quiz-navegador')">Verificar Respostas</button>
+            </form>
+            <p id="resultado-navegador"></p>
+        </div>
+    
+
+
+
+        <!-- Quiz 2: Nuvem 
+        O que esse código faz?
+        Cria dois quizzes: um sobre navegador e outro sobre nuvem.
+        Cada quiz tem:
+        Um título (<h3>).
+        Perguntas de múltipla escolha (<input type="radio">).
+        Um botão para verificar as respostas.
+        Um parágrafo (<p>) para mostrar o resultado.
+
+-->
+        <div class="quiz">
+            <h3><i class="fas fa-question-circle"></i> Quiz: O que é a nuvem?</h3>
+            <form id="quiz-nuvem">
+                <p>1. O que é a nuvem?</p>
+                <label>
+                    <input type="radio" name="q1" value="a"> Um tipo de clima
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="b"> Um serviço de armazenamento online
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="c"> Um dispositivo físico
+                </label><br>
+    
+                <p>2. Qual dos seguintes é um serviço de nuvem?</p>
+                <label>
+                    <input type="radio" name="q2" value="a"> Google Drive
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="b"> Microsoft Excel
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="c"> Adobe Illustrator
+                </label><br>
+    
+                <button type="button" onclick="verificarRespostas('quiz-nuvem')">Verificar Respostas</button>
+            </form>
+            <p id="resultado-nuvem"></p>
+        </div>
+    </section>
+
+
+
+    <!-- Seção de Exemplos Práticos -->
+    <section id="exemplos">
+        <h2>Exemplos Práticos</h2>
+        <p>Aprenda com exemplos práticos e tutoriais.</p>
+    
+        <!-- Exemplo 1: Como usar um navegador -->
+        <div class="exemplo">
+            <h3><i class="fas fa-desktop"></i> Como usar um navegador</h3>
+            <p>Passo a passo para abrir um navegador e acessar uma página da web:</p>
+            <ol>
+                <li>Clique no ícone do navegador (ex: Google Chrome) no seu computador ou celular.</li>
+                <li>Na barra de endereços, digite o endereço do site que deseja visitar (ex: www.google.com).</li>
+                <li>Pressione "Enter" para carregar a página.</li>
+            </ol>
+            <!-- Vídeo do YouTube -->
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/d_oBDaEp8Yo?si=NijlHII786cFJL-_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+        <!-- Exemplo 2: Como usar a nuvem -->
+        <div class="exemplo">
+            <h3><i class="fas fa-cloud-upload-alt"></i> Como usar a nuvem</h3>
+            <p>Passo a passo para salvar um arquivo na nuvem:</p>
+            <ol>
+                <li>Acesse um serviço de nuvem, como o Google Drive (drive.google.com).</li>
+                <li>Clique no botão "Novo" e selecione "Upload de arquivo".</li>
+                <li>Escolha o arquivo no seu computador e clique em "Abrir".</li>
+            </ol>
+            <!-- Vídeo do YouTube -->
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/poZN4tojISA?si=Y5BE8SugQhMCsFjq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 - Aplicação de Alfabetização Digital</p>
+        <div class="links-uteis">
+            <a href="https://www.youtube.com" target="_blank">Mais Tutoriais no YouTube</a>
+            <a href="https://www.google.com/drive" target="_blank">Google Drive</a>
+            <a href="https://www.google.com/intl/pt-BR/chrome/" target="_blank">Baixar Google Chrome</a>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
+
+<!--O que esse código faz?
+Menu de Navegação (<nav>):
+
+Cria links para as seções da página (Início, Conceitos Básicos, Quizzes, Exemplos Práticos).
+
+Os links usam # para rolar a página até a seção correspondente.
+
+Seções (<section>):
+
+Cada seção tem um título (<h2>) e um pequeno texto explicativo.
+
+A seção de Conceitos Básicos lista os tópicos que serão abordados.
+
+Rodapé (<footer>):
+
+Mostra uma mensagem de direitos autorais.-->

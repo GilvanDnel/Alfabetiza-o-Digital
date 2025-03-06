@@ -1,0 +1,381 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho e Menu de Navegação */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+    text-decoration: underline;
+}
+
+/* Seções */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Estilos para a Seção de Conceitos Básicos */
+.conceito {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #333;
+    border-radius: 4px;
+}
+
+.conceito h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+.conceito img {
+    display: block;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+
+/* Estilos para a Seção de Quizzes */
+.quiz {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #333;
+    border-radius: 4px;
+}
+
+.quiz h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+.quiz button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.quiz button:hover {
+    background-color: #555;
+}
+
+/* Estilos para a Seção de Exemplos Práticos */
+.exemplo {
+    margin-bottom: 20px; /* Espaçamento entre os exemplos */
+    padding: 15px; /* Espaçamento interno */
+    background-color: #f9f9f9; /* Cor de fundo */
+    border-left: 5px solid #333; /* Borda à esquerda */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+.exemplo h3 {
+    color: #333; /* Cor do título */
+    margin-top: 0; /* Remove a margem superior */
+}
+
+.exemplo ol {
+    margin: 10px 0; /* Espaçamento externo da lista */
+    padding-left: 20px; /* Espaçamento interno da lista */
+}
+
+.exemplo img {
+    display: block; /* Faz a imagem ocupar toda a largura disponível */
+    margin: 10px 0; /* Espaçamento externo da imagem */
+    border-radius: 8px; /* Bordas arredondadas na imagem */
+}
+
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Cor de fundo mais clara */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #00796b; /* Cor de fundo mais escura */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Adiciona transição suave ao passar o mouse */
+}
+
+nav ul li a:hover {
+    color: #b2dfdb; /* Cor mais clara ao passar o mouse */
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona animação */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Move a seção para cima ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+}
+
+h1, h2, h3 {
+    color: #00796b; /* Cor dos títulos */
+}
+
+.conceito, .quiz, .exemplo {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-left: 5px solid #00796b; /* Borda à esquerda com cor temática */
+    border-radius: 4px;
+}
+
+.conceito h3, .quiz h3, .exemplo h3 {
+    color: #00796b; /* Cor dos títulos */
+    margin-top: 0;
+}
+
+.conceito img, .quiz img, .exemplo img {
+    display: block;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #00796b; /* Cor de fundo mais escura */
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Define a animação fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Começa invisível */
+        transform: translateY(20px); /* Começa 20px abaixo */
+    }
+    to {
+        opacity: 1; /* Termina visível */
+        transform: translateY(0); /* Volta à posição original */
+    }
+}
+
+/* Aplica a animação às seções */
+section {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Container do vídeo */
+.video-container {
+    position: relative; /* Permite posicionar o iframe dentro do container */
+    padding-bottom: 56.25%; /* Mantém a proporção 16:9 (altura/largura) */
+    height: 0; /* Altura inicial */
+    overflow: hidden; /* Esconde conteúdo que ultrapassa o container */
+    margin: 10px 0; /* Espaçamento externo */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Iframe do vídeo */
+.video-container iframe {
+    position: absolute; /* Posiciona o vídeo dentro do container */
+    top: 0; /* Alinha no topo */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Ocupa toda a largura do container */
+    height: 100%; /* Ocupa toda a altura do container */
+    border: none; /* Remove a borda */
+}
+
+
+/* Estilos para Dispositivos Móveis */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Aumenta o tamanho da fonte para melhor legibilidade */
+    }
+
+    header {
+        padding: 15px 0; /* Reduz o espaçamento do cabeçalho */
+    }
+
+    nav ul li {
+        display: block; /* Coloca os itens do menu em uma coluna */
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 15px; /* Reduz o espaçamento interno das seções */
+        margin: 15px 0;
+    }
+
+    .conceito, .quiz, .exemplo {
+        padding: 15px; /* Reduz o espaçamento interno dos exemplos e quizzes */
+    }
+
+    .video-container {
+        padding-bottom: 75%; /* Ajusta a proporção do vídeo para telas menores */
+    }
+
+    h1 {
+        font-size: 24px; /* Reduz o tamanho do título principal */
+    }
+
+    h2 {
+        font-size: 20px; /* Reduz o tamanho dos títulos das seções */
+    }
+
+    h3 {
+        font-size: 18px; /* Reduz o tamanho dos títulos dos exemplos e quizzes */
+    }
+}
+
+/* Estilos para o Rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #00796b;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.links-uteis {
+    margin-top: 10px;
+}
+
+.links-uteis a {
+    color: #b2dfdb;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.links-uteis a:hover {
+    text-decoration: underline;
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    opacity: 0; /* Inicia invisível */
+    transform: translateY(20px); /* Inicia 20px abaixo */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1; /* Torna visível */
+    transform: translateY(0); /* Volta à posição original */
+}
+
+/* Transições suaves para links e botões */
+a, button {
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover, button:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+}
+
+
+/*O que esse código faz?
+Cabeçalho (header):
+
+Define um fundo escuro e texto branco.
+
+Centraliza o menu de navegação.
+
+Menu de Navegação (nav):
+
+Remove os marcadores de lista e alinha os itens horizontalmente.
+
+Adiciona estilos para os links (cor, negrito e efeito ao passar o mouse).
+
+Seções (section):
+
+Adiciona espaçamento interno, fundo branco e bordas arredondadas.
+
+Aplica uma sombra sutil para destacar as seções.
+
+Rodapé (footer):
+
+Centraliza o texto e aplica um fundo escuro.
+O que esse código faz?
+.conceito:
+
+Adiciona um fundo claro e uma borda à esquerda para destacar cada conceito.
+
+Aplica espaçamento interno e externo.
+
+.conceito h3:
+
+Define a cor do título e remove a margem superior.
+
+.conceito img:
+
+Centraliza as imagens e adiciona bordas arredondadas.
+
+*/
