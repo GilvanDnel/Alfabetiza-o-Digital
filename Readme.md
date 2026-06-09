@@ -2,19 +2,20 @@
 
 Site educativo voltado para alfabetizacao digital, com conteudos introdutorios sobre navegacao, nuvem e redes sociais.
 
+## Acesse
+
+https://gilvandnel.github.io/Alfabetiza-o-Digital/
+
 ## Objetivo
 
-Apoiar pessoas que estao iniciando no uso de ferramentas digitais, apresentando conceitos de forma visual e acessivel.
+Apoiar pessoas que estao iniciando no uso de ferramentas digitais, apresentando conceitos de forma visual, simples e acessivel.
 
 ## Tecnologias
 
 - HTML
 - CSS
 - JavaScript
-
-## Como visualizar
-
-Abra o arquivo `index.html` em um navegador ou publique o projeto via GitHub Pages.
+- GitHub Pages
 
 ## Estrutura
 
@@ -23,8 +24,8 @@ Abra o arquivo `index.html` em um navegador ou publique o projeto via GitHub Pag
 - `scripts/main.js`: comportamentos da pagina
 - `assets/images/`: imagens usadas no conteudo
 
-## Proximos ajustes
+## Possiveis melhorias
 
-- Revisar textos para linguagem ainda mais acessivel.
-- Adicionar prints ou link da versao publicada.
-- Documentar publico-alvo e contexto de uso.
+- Adicionar roteiro pedagogico para uso em oficina.
+- Criar secoes com atividades praticas.
+- Incluir prints e breve demonstracao no README.
